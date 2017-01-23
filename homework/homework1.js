@@ -1,6 +1,10 @@
 
 "use strick"
 
+var location = {
+    hash : "";
+    search : "";
+}
 
 function checkURL() {
 
@@ -34,3 +38,8 @@ function checkURL() {
 
 }
 
+function runTest()
+{
+
+    checkURL();
+}
