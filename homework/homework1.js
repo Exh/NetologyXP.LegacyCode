@@ -1,8 +1,12 @@
+
+"use strick"
+
+
 function checkURL() {
 
     //get the url by removing the hash
     var url = location.hash.replace(/^#/, '');
-
+    alert(url);
     container = $('#content');
     // Do this if url exists (for page refresh, etc...)
     if (url) {
@@ -11,7 +15,7 @@ function checkURL() {
         // match the url and add the active class
         $('nav li:has(a[href="' + url + '"])').addClass("active");
         var title = ($('nav a[href="' + url + '"]').attr('title'))
-
+        alert(title);
         // change page title from global var
         document.title = (title || document.title);
         //console.log("page title: " + document.title);
@@ -29,3 +33,4 @@ function checkURL() {
     }
 
 }
+

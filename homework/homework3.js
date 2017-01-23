@@ -1,3 +1,5 @@
+player = {};
+
 player.showHighScoreList = function(pageToken) {
     document.querySelector('#highScoreListDiv').innerHTML = '';
     document.querySelector('#highScoreListDiv').style.display = 'block';
@@ -34,3 +36,5 @@ player.showHighScoreList = function(pageToken) {
             }
         });
 };
+
+player.showHighScoreList();
